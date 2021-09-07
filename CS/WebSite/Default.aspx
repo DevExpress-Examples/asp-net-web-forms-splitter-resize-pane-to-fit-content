@@ -12,6 +12,7 @@
             var iframeElement = splitter.GetPaneByName('ContentUrlPane').GetContentIFrame();
             var iframe = GetFrameOfIFrame(iframeElement);
             var doc = iframe.document;
+
             splitter.SetHeight(doc.documentElement.offsetHeight);
         }
         function GetFrameOfIFrame(iframeElement) {
