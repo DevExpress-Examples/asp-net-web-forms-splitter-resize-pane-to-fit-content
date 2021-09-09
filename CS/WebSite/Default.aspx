@@ -15,6 +15,7 @@
 
             splitter.SetHeight(doc.documentElement.offsetHeight);
         }
+
         function GetFrameOfIFrame(iframeElement) {
             var name = (new Date()).toString();
             var backup = iframeElement.contentWindow.name;
@@ -23,6 +24,7 @@
             iframeElement.contentWindow.name = backup;
             return window.frames[frameIndex];
         }
+
         function internalGetFrameByWindowName(name) {
             var count = window.top.frames.length;
             for (var i = 0; i < count; i++) {
