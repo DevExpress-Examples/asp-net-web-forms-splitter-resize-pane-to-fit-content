@@ -13,7 +13,7 @@
 			var iframe = GetFrameOfIFrame(iframeElement);
 			var doc = iframe.document;
 
-			splitter.SetHeight(doc.documentElement.scrollHeight + 2);
+			splitter.SetHeight(doc.documentElement.offsetHeight);
 		}
 
 		function GetFrameOfIFrame(iframeElement) {

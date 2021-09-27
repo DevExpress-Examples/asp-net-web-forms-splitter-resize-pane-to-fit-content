@@ -34,7 +34,7 @@
                 Notes:
             </td>
             <td>
-                <dx:ASPxMemo ID="notes" runat="server" Width="270px" Height="250px">
+                <dx:ASPxMemo ID="notes" runat="server" Width="270px" Height="270px">
                 </dx:ASPxMemo>
             </td>
         </tr>
