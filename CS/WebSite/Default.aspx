@@ -8,12 +8,12 @@
 <head runat="server">
     <title></title>
     <script type="text/javascript">
-          function CalculateSize() {
+        function CalculateSize() {
             var iframeElement = splitter.GetPaneByName('ContentUrlPane').GetContentIFrame();
             var iframe = GetFrameOfIFrame(iframeElement);
             var doc = iframe.document;
 
-            splitter.SetHeight(doc.documentElement.scrollHeight + 2);
+            splitter.SetHeight(doc.documentElement.offsetHeight);
         }
 
         function GetFrameOfIFrame(iframeElement) {
@@ -24,6 +24,7 @@
             iframeElement.contentWindow.name = backup;
             return window.frames[frameIndex];
         }
+
         function internalGetFrameByWindowName(name) {
             var count = window.top.frames.length;
             for (var i = 0; i < count; i++) {
@@ -45,7 +46,7 @@
                 <dx:SplitterPane>
                 </dx:SplitterPane>
             </Panes> 
-            <ClientSideEvents PaneContentUrlLoaded="CalculateSize" />          
+            <ClientSideEvents PaneContentUrlLoaded="CalculateSize"/>          
         </dx:ASPxSplitter>
      </div>
     </form>
