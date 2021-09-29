@@ -4,7 +4,6 @@ using DevExpress.Security.Resources;
 namespace Solution {
     public class Global_asax : System.Web.HttpApplication {
         void Application_Start(object sender, EventArgs e) {
-            DevExpress.Web.ASPxWebControl.CallbackError += new EventHandler(Application_Error);
             AccessSettings.DataResources.SetRules(DirectoryAccessRule.Allow(Server.MapPath("~/Content")), UrlAccessRule.Allow());
         }
 
