@@ -4,10 +4,10 @@ Imports DevExpress.Security.Resources
 Namespace Solution
 
     Public Class Global_asax
-        Inherits System.Web.HttpApplication
+        Inherits Web.HttpApplication
 
         Private Sub Application_Start(ByVal sender As Object, ByVal e As EventArgs)
-            AccessSettings.DataResources.SetRules(DirectoryAccessRule.Allow(Server.MapPath("~/Content")), UrlAccessRule.Allow())
+            Call AccessSettings.DataResources.SetRules(DirectoryAccessRule.Allow(Server.MapPath("~/Content")), UrlAccessRule.Allow())
         End Sub
 
         Private Sub Application_End(ByVal sender As Object, ByVal e As EventArgs)

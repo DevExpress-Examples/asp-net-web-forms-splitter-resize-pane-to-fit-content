@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ContentPage.aspx.cs" Inherits="Solution.ContentPage" %>
+<%@ Page Language="VB" AutoEventWireup="true" CodeBehind="ContentPage.aspx.vb" Inherits="Solution.ContentPage" %>
 
 <!DOCTYPE html>
 
