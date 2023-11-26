@@ -6,9 +6,7 @@
 
 # Splitter for ASP.NET Web Forms - How to resize a pane according to the height of its content specified by the ContentUrl property
 
-The [AutoHeight](https://docs.devexpress.com/AspNet/DevExpress.Web.SplitterPane.AutoHeight) property is not in effect if the [ContentUrl](https://docs.devexpress.com/AspNet/DevExpress.Web.SplitterPane.ContentUrl) property is specified. 
-
-This example demonstrates how to change the size of a pane based on the size of its content.
+The [AutoHeight](https://docs.devexpress.com/AspNet/DevExpress.Web.SplitterPane.AutoHeight) property is not in effect if the [ContentUrl](https://docs.devexpress.com/AspNet/DevExpress.Web.SplitterPane.ContentUrl) property is specified. This example demonstrates how to change the size of a pane based on the size of its content.
  
 ## Files to Review
 
