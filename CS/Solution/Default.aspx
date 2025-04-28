@@ -6,30 +6,11 @@
 <head runat="server">
     <title></title>
     <script type="text/javascript">
-        function CalculateSize() {
-            var iframeElement = splitter.GetPaneByName('ContentUrlPane').GetContentIFrame();
-            var iframe = GetFrameOfIFrame(iframeElement);
-            var doc = iframe.document;
-
-            splitter.SetHeight(doc.documentElement.offsetHeight);
-        }
-
-        function GetFrameOfIFrame(iframeElement) {
-            var name = (new Date()).toString();
-            var backup = iframeElement.contentWindow.name;
-            iframeElement.contentWindow.name = name;
-            var frameIndex = this.internalGetFrameByWindowName(name);
-            iframeElement.contentWindow.name = backup;
-            return window.frames[frameIndex];
-        }
-
-        function internalGetFrameByWindowName(name) {
-            var count = window.top.frames.length;
-            for (var i = 0; i < count; i++) {
-                if (window.top.frames[i].window.name === name)
-                    return i;
-            }
-            return -1;
+        function CalculateSize(s, e) {
+            const iframeElement = s.GetPaneByName('ContentUrlPane').GetContentIFrame();
+            const iframeDoc = iframeElement.contentDocument || iframeElement.contentWindow.document;
+            const iFrameOffsetHeight = iframeDoc.documentElement.offsetHeight;
+            s.SetHeight(iFrameOffsetHeight);
         }
     </script>
 </head>
