@@ -17,7 +17,7 @@ The [AutoHeight](https://docs.devexpress.com/AspNet/DevExpress.Web.SplitterPane.
 
 * [Popup Control for ASP.NET Web Forms - How to resize the pop-up window based on to the content page size](https://github.com/DevExpress-Examples/asp-net-web-forms-popup-control-resize-popup-window-based-on-content-page-size)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-web-forms-splitter-resize-pane-to-fit-content&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-web-forms-splitter-resize-pane-to-fit-content&~~~was_helpful=no)
 
